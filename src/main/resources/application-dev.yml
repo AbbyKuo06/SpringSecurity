@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+#Swagger
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: false
+    path: /swagger-ui.html
+  #    configUrl: /v3/api-docs/swagger-config #打開會連結到範例文件
+  api-docs:
+    path: /v3/api-docs
+
+logging:
+  file:
+    # path: /var/log/myapp/ # 在Linux中
+    path: E:\codeProject\log\SpringSecurity # Windows
+  config: classpath:logback-spring.xml
+
+token:
+  expirationMinute: 900000  # 分，token過期時間
+  key: 4iZv6G9vQX5Vb23qRtKw4U6Px7yJp9NsLgCv8W6Pn1Rt2Kx5Vb3SqA
+
+# cors
+cors:
+  allowed:
+    origin: "*"
